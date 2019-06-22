@@ -1,0 +1,22 @@
+{
+  "name": "rock",
+  "version": "1.0.0",
+  "description": "rockesque for entryway",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/essitam/rock.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "bugs": {
+    "url": "https://github.com/essitam/rock/issues"
+  },
+  "homepage": "https://github.com/essitam/rock#readme"
+}
