@@ -7,4 +7,4 @@ function listening(){
   console.log("listening. . .");
 }
 
-app.use(express.static('aframe'));
+app.use(express.static('public'));
