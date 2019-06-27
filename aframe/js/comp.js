@@ -1,13 +1,11 @@
 AFRAME.registerComponent('json-image-loader', {
   init: function () {
-    var verses = [ 'thingies/beblm.png',
-                    'thingies/beige.png',
-                    'thingies/bluewatering.png',
-                    'thingies/claybowl.png',
-                     'thingies/compost.png',
-                     'thingies/cephskin.png',
-                     'thingies/onpic.png',
-                     'thingies/opurple.png'
+    var verses = [  'img/01.jpg',
+                    // 'img/02.jpg',
+                    // 'img/03.png',
+                    // 'img/04.png',
+                    'img/05.png',
+                    'img/06.jpg'
                    ];
 
       var sceneEl = document.querySelector('a-scene');
@@ -17,11 +15,11 @@ AFRAME.registerComponent('json-image-loader', {
 
       for (var i = 0; i < els.length; i++) {
         // for (var j = 0; j < els.length; j++) {
-        var random= Math.floor(Math.random() * 8) + 0;
+        var random= Math.floor(Math.random() * 3) + 0;
         var thingies = verses[random];
         els[i].setAttribute('material', {src:thingies});
         els[i].setAttribute('material', {transparent:true});
-        // console.log(els[i]);
+        console.log(els[i]);
       }
     // }
 

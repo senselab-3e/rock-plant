@@ -1,9 +1,9 @@
-if (navigator.userAgent.match(/AppleWebKit/) && ! navigator.userAgent.match(/Chrome/)) {  
+if (navigator.userAgent.match(/AppleWebKit/) && ! navigator.userAgent.match(/Chrome/)) {
   document.documentElement.className += " safari";
 }
 
 
-//-------------- old loop 
+//-------------- old loop
 
 // const elems = document.getElementsByv("insert");
 
@@ -34,14 +34,14 @@ var array4 = ['img/beigbowl.png','img/beigbowl.png','img/beigbowl.png','img/beig
 var array5 = ['img/typbroommm.png','img/typbroommm.png','img/typbroommm.png','img/typbroommm.png','img/typbroommm.png','img/posters.png','img/typbroommm.png','img/typbroommm.png','img/typbroommm.png','img/purplerock.png','img/purplerock.png','img/purplerock.png','img/sponges.png','img/sponges.png','img/cephskin.png']
 
 function createthingy(array){
-  
+
   main = document.createElement('div');
   main.className = "main";
   containerdiv = document.createElement('div');
   containerdiv.className = "scene";
   plant = document.createElement('div');
   plant.className = "plant";
-  for (var c in array) {  
+  for (var c in array) {
     var div = document.createElement('div');
     div.className = "img";
     containerdiv.appendChild(div)
@@ -55,7 +55,7 @@ function createthingy(array){
     containerdiv.appendChild(plant);
     main.appendChild(containerdiv)
     document.body.appendChild(main)
-    
+
   }
 }
 
@@ -66,19 +66,8 @@ const insertarry = () => {
    return Math.floor(Math.random() * Math.floor(arrayoptions.length));
 }
 
-//by having arrayoptions.length, it means that we can continually fluxuate the number of arrays passing through array options, without having to update the values in this function. 
+//by having arrayoptions.length, it means that we can continually fluxuate the number of arrays passing through array options, without having to update the values in this function.
 
 createthingy(arrayoptions[insertarry()])
 
 //this is where we pass the random arry chosen in the arrayoptions function, into the consructorofthe3dthingy function createthingy
-
-
-
-
-
-
-
-
-
-
-
